@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/timer_popupwindow_background"
+    android:layout_margin="10dp"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/timerOffIV"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/timer_off"
+        android:layout_margin="15dp"/>
+    <ImageView
+        android:id="@+id/timer2sIV"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/timer2s"
+        android:layout_margin="15dp"/>
+    <ImageView
+        android:id="@+id/timer5sIV"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/timer5s"
+        android:layout_margin="15dp"/>
+    <ImageView
+        android:id="@+id/timer7sIV"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/timer7s"
+        android:layout_margin="15dp"/>
+    <ImageView
+        android:id="@+id/timer9sIV"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/timer9s"
+        android:layout_margin="15dp"/>
+
+</LinearLayout>

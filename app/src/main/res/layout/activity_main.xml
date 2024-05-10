@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".Activities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/textureView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src ="@drawable/settings"/>
+        <ImageView
+            android:id="@+id/flash"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src ="@drawable/flash_off"/>
+        <ImageView
+            android:id="@+id/timer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="24dp"
+            android:src ="@drawable/timer_off"/>
+        <ImageView
+            android:id="@+id/filters"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src ="@drawable/filters"/>
+    </LinearLayout>
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#fff"
+        app:layout_constraintDimensionRatio="3:4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textureView">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:visibility="visible"
+            android:layout_marginStart="34dp"
+            android:src="@drawable/photos"
+            android:background="@drawable/frame_capture_background"
+            />
+
+        <ImageButton
+            android:id="@+id/cameraButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:enabled="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/click_btn"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/switchCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:visibility="visible"
+            android:layout_marginEnd="34dp"
+            android:src="@drawable/switch_camera"
+            android:background="@drawable/frame_capture_background"
+            />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
